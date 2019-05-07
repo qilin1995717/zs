@@ -1,3 +1,4 @@
+
   header { 
             width: 7.5rem;
             margin: 0 auto;
@@ -67,7 +68,7 @@
             font-size: .24rem;
 			line-height: 1.5;
 			text-indent: 2em;
-            color: #8e76ff;
+            color: #666;
             padding-left: .2rem;
         }
         .mingshi {
@@ -80,6 +81,8 @@
         }
         .mingshi .mingshi_box {
             padding: 0 .2rem;
+			width: 90%;
+			overflow: hidden;
         }
 		
         .jiagebiaoti {
@@ -102,41 +105,65 @@
         .tese ul li{
             background: #fff;
             width: 6.9rem;
-            height: 1.86rem;
+            /* height: 1.86rem; */
             border-radius: .1rem;
             margin-bottom: .2rem;
             overflow: hidden;
         }
         .tese ul li .img {
-            width: 2.06rem;
-            height: 1.86rem;
+            width: 100%;
+            max-height: 4rem;
             overflow: hidden;
-            float: left;
         }
         .tese ul li .img img {
             width: 100%;
             height: 100%;
         }
         .tese ul li .words {
-            float: left;
-            width: 4.2rem;
-            margin-left: .36rem;
+			width: 100%;
         }
 
         .tese ul li .words h6{
+			text-align: center;
             font-size: .34rem;
             font-weight: normal;
             color: #7155f7;
-            height: .8rem;
-            line-height: .9rem;
-            margin-top: .1rem;
+			margin-top: .3rem;
         }
 
+.mingshi_box p{
+	width: 80%;
+	margin-top: -2px;
+	float: right;
+	line-height: 2;
+	color: #666666;
+	font-size: .24rem;
+}
+.jg{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-bottom: .2rem;
+}
+.jg span{
+	width: 50%;
+	text-align: center;
+	color: #d23a28;
+}
+.mingshi_box span{
+	margin-left: 10%;
+	margin-right: .2rem;
+	background:#aa99fd ;
+	padding: 5px;
+	color: #FFFFFF;
+}
         .tese ul li .words p {
+			margin: .3rem;
             font-size: .22rem;
-            color: #8e76ff;
-            height: .8rem;
+            color: #666;
             display: flex;
+			text-indent: 2em;
+			line-height: 1.5;
             display: -webkit-flex;
             align-items:center;
         }
@@ -145,76 +172,21 @@
             background: #d4dbf3;
             padding-bottom: .3rem;
         }
-        .fuwutixi ul {
-            width: 5.6rem;
-            overflow: hidden;
-            border-radius: .12rem;
-            margin-left: .3rem;
-            padding-left: 1.3rem;
-            background: url(../images/tixi.png) no-repeat center center;
-            background-size: 105%;
-
-        }
-        .fuwutixi ul li{
-            width: 5.6rem;
-            height: 1rem;
-            background: #fff;
-            border-bottom: 1px solid #a796fb;
-        }
-        .fuwutixi ul li:last-child{
-            border-bottom: none;
-        }
-
-        .fuwutixi ul li h6 {
-            font-size: .32rem;
-            height: .44rem;
-            color: #7155f7;
-            font-weight: normal;
-            padding-top: .1rem;
-        }
-
-        .fuwutixi ul li p{
-            font-size: .22rem;
-            color: #8e76ff;
-        }
-
-        .koubei {
-            background: #e2e6f2;
-            overflow: hidden;
-            padding-bottom: .3rem;
-        }
-        .koubei ul li {
-            overflow: hidden;
-            margin-left: .3rem;
-        }
-        .koubei ul li .headerImg{
-            width: 1.5rem;
-            height: 1.5rem;
-            float: left;
-            text-align: center;
-        }
-
-        .koubei ul li .headerImg img {
-            width: 1.1rem;
-            height: 1.1rem;
-        }
-
-        .koubei ul li .headerImg p {
-            font-size: .26rem;
-            color: #8e76ff;
-        }
-        .koubei ul li .desc {
-            width: 4.9rem;
-            padding-left: .3rem;
-            padding-top: .3rem;
-            float: left;
-            height: 1.2rem;
-            line-height: .32rem;
-            background: url(../images/message.png) no-repeat center center;
-            background-size: 100%;
-            color: #204cd1;
-            font-size: .24rem;
-        }
+.yh{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.yh1{
+	
+}
+.yh h2{
+	color: #d23a28;
+}
+.yh p{
+	color: #666666;
+	margin-top: .2rem;
+}
 
         footer {
             width: 7.5rem;
@@ -222,138 +194,4 @@
             height: 4.6rem;
             background: #FFFFFF url(../images/footer.png) no-repeat center center;
             background-size: 100%;
-        }
-
-   
-
-        .baoming_select_li {
-             position: relative;
-         }
-        .baoming_select {
-            width: 6rem;
-            border-radius: .1rem;
-            min-height: 3.2rem;
-            height: auto;
-            background: #fff;
-            z-index: 99;
-            position: absolute;
-            left: 0.45rem;
-            top: .7rem;
-            box-shadow: 0 0 .1rem .02rem rgba(0,0,0,0.5);
-            display: none;
-        }
-        .baoming_select  div{
-            height: .8rem;
-            line-height: .8rem;
-            width: 100%;
-            border-bottom: 1px solid #eee;
-            overflow: hidden;
-        }
-        .baoming_box .baoming_select  div input {
-            width: .4rem;
-            height: .4rem;
-            float: left;
-            margin-left: 0.3rem;
-        }
-        .baoming_box .baoming_select .queding {
-            text-align: center;
-            border-bottom: none;
-            cursor: pointer;
-            height: 1rem;
-        }
-        .baoming_box .baoming_select .queding button {
-            width: 2rem;
-            height: .6rem;
-            border:none;
-            margin: 0.2rem auto;
-            padding: 0;
-            background:#7155f7;
-            color: #fff;
-        }
-        /*选择年级*/
-        .nianji_select_li {
-            position: relative;
-        }
-        .nianji_select {
-            width: 6rem;
-            border-radius: .1rem;
-            height: 4.9rem;
-            background: #fff;
-            z-index: 100;
-            position: absolute;
-            left: 0.45rem;
-            top: .7rem;
-            box-shadow: 0 0 .1rem .02rem rgba(0,0,0,0.5);
-            display: none;
-        }
-        .nianji_select  div{
-            height: .8rem;
-            line-height: .8rem;
-            width: 100%;
-            border-bottom: 1px solid #eee;
-            overflow: hidden;
-        }
-        .baoming_box .nianji_select  div input {
-            width: .4rem;
-            height: .4rem;
-            float: left;
-            margin-left: 0.3rem;
-        }
-        .baoming_box .nianji_select .queding {
-            text-align: center;
-            border-bottom: none;
-            cursor: pointer;
-            height: 1rem;
-        }
-        .baoming_box .nianji_select .queding button {
-            width: 2rem;
-            height: .6rem;
-            border:none;
-            margin: 0.2rem auto;
-            padding: 0;
-            background:#7155f7;
-            color: #fff;
-        }
-        .yuanquan  ul{
-            text-align: center;
-            margin-top: .2rem;
-        }
-        .yuanquan  ul li{
-            width: .2rem;
-            height: .2rem;
-            border-radius: 50%;
-            background:#a796fb;
-            display: inline-block;
-            margin-left: .1rem;
-        }
-        .yuanquan  ul li:nth-of-type(1){
-            background: #7155f7;
-        }
-        /*表格样式*/
-        .biaoge {
-            background: #dee0f1;
-            padding: .3rem 0 0;
-        }
-        .biaoge .biaoge_box{
-            width: 6.5rem;
-            padding: .4rem .2rem .3rem;
-            margin: 0 auto 0;
-            background: #fff;
-            box-shadow: 0 0 .1rem 0.04rem rgba(0,0,0,0.1);
-            border-radius: .12rem;
-        }
-        .yitijiao{
-            font-size: .3rem;
-            text-align: center;
-            color: #333;
-            margin-bottom: .2rem;
-        }
-        .biaoge .biaoge_box table,.biaoge .biaoge_box td,.biaoge .biaoge_box th{
-            border: 1px solid #ccc;
-        }
-        .biaoge .biaoge_box td,.biaoge .biaoge_box th{
-            height: .4rem;
-            text-align: center;
-            font-size: .24rem;
-            color:#484848;
         }
