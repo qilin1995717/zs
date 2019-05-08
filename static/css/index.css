@@ -135,12 +135,15 @@
 	width: 100%;
 	line-height: 2;
 	color: #666666;
+	text-indent: 2em;
 	font-size: .24rem;
 }
-.mingshi_box p span{
+.mingshi_box span{
 	color: #7d5ff8;
 	font-size: .4rem;
-	padding-right: .2rem;
+	padding: .2rem;
+	text-align: center;
+	display: block;
 }
 .jg{
 	display: flex;

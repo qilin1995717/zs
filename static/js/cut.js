@@ -17,7 +17,9 @@ function countTime() {
                  h = Math.floor(leftTime/1000/60/60%24);  
                  m = Math.floor(leftTime/1000/60%60);  
                  s = Math.floor(leftTime/1000%60);                     
-             }  
+             }else{
+				 document.getElementById("hd1").innerHTML="优惠已截止";
+			 }  
              //将倒计时赋值到div中  
              document.getElementById("t1").innerHTML = d+"天";  
              document.getElementById("s1").innerHTML = h+"时";
@@ -42,7 +44,9 @@ function countTime() {
                   h = Math.floor(leftTime/1000/60/60%24);  
                   m = Math.floor(leftTime/1000/60%60);  
                   s = Math.floor(leftTime/1000%60);                     
-              }  
+              } else{
+				 document.getElementById("hd2").innerHTML="优惠已截止";
+			 }  
               //将倒计时赋值到div中  
               document.getElementById("t2").innerHTML = d+"天";  
               document.getElementById("s2").innerHTML = h+"时";
@@ -67,7 +71,9 @@ function countTime() {
                    h = Math.floor(leftTime/1000/60/60%24);  
                    m = Math.floor(leftTime/1000/60%60);  
                    s = Math.floor(leftTime/1000%60);                     
-               }  
+               }  else{
+				 document.getElementById("hd3").innerHTML="优惠已截止";
+			 } 
                //将倒计时赋值到div中  
                document.getElementById("t3").innerHTML = d+"天";  
                document.getElementById("s3").innerHTML = h+"时";
