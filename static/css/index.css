@@ -157,6 +157,37 @@
 	padding: 5px;
 	color: #FFFFFF;
 }
+.baoming input{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	padding: .2rem;
+	border: 1px solid #d4dbf3;
+	border-radius: 3px;
+	color: #666;
+}
+.baoming {
+	position: relative;
+	height: 5rem;
+}
+.baoming button{
+	background: #7d5ff8;
+	color: #FFFFFF;
+	border: #7d5ff8;
+	border-radius: 3px;
+	width: 50%;
+	padding: .1rem;
+	margin: .5rem auto;
+	display: block;
+}
+.baoming img{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 1.75rem;
+	height: 2rem;
+	
+}
         .tese ul li .words p {
 			margin: .3rem;
             font-size: .22rem;
@@ -178,14 +209,29 @@
 	text-align: center;
 }
 .yh1{
-	
+	width: 80%;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 5px;
+	padding: .3rem;
+	box-shadow: 0px 3px 3px #eee;
 }
 .yh h2{
-	color: #d75251;
+	color: #aa99fd;
+	font-size: .35rem;
+	font-weight: 550;
 }
 .yh p{
-	color: #666666;
+	color: #666;
 	margin-top: .2rem;
+}
+.yh span{
+	color: #aa99fd;
+	padding-top: .2rem;
+	display: block;
+}
+.yh span i{
+	color: red;
 }
 
         footer {
