@@ -132,11 +132,15 @@
         }
 
 .mingshi_box p{
-	width: 80%;
-	float: right;
+	width: 100%;
 	line-height: 2;
 	color: #666666;
 	font-size: .24rem;
+}
+.mingshi_box p span{
+	color: #7d5ff8;
+	font-size: .4rem;
+	padding-right: .2rem;
 }
 .jg{
 	display: flex;
@@ -149,21 +153,12 @@
 	text-align: center;
 	color: #d23a28;
 }
-.mingshi_box span{
-	margin-left: 14%;
-	margin-top: .15rem;
-	border-radius: 50%;
-	margin-right: .2rem;
-	background:#aa99fd ;
-	width: .15rem;
-	height: .15rem;
-	float: left;
-	display: block;
-	color: #FFFFFF;
-}
 .mingshi_box div{
+	width: 80%;
+	margin: 0 auto;
 	overflow: hidden;margin-bottom: .2rem;
-	padding-bottom: .2rem;
+	padding: .2rem;
+	border: 1px solid #EEEEEE;
 }
 .baoming input{
 	width: 50%;
