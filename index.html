@@ -153,15 +153,28 @@
     </section>
 	 <section class="baoming wrap">
 	    <div class="biaoti" style="margin-bottom: .5rem;">填写信息马上报名</div>
-		<input type="text" id="" placeholder="请输入您的姓名">
+		<input type="text" id="name" placeholder="请输入您的姓名">
 		<br>
-		<input type="phone" id="" placeholder="请输入您的手机号">
-		<button type="button">立即报名</button>
+		<input type="number" type="phone" id="phone" maxlength="11" placeholder="请输入您的手机号">
+		<br>
+		<div class="xzxq">
+			<input type="text" id="xq" placeholder="请选择校区"/>
+			<ul id="xzxq">
+				<li>纬五路校区</li>
+				<li>北环校区</li>
+				<li>郑东校区</li>
+				<li>汝河路校区</li>
+				<li>华强校区</li>
+			</ul>
+		</div>
+		
+		<button type="button" id="bm">立即报名</button>
 		<img src="static/images/xiaoxiang%20.png" >
 	</section>
     <footer wrap></footer>
 </body>
 <script type="text/javascript" src="static/js/swiper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="static/js/cut.js" type="text/javascript"></script>
 <script type="text/javascript">
 	 var imgswiperswiper = new Swiper('.imgswiper', {

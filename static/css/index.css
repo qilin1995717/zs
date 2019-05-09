@@ -172,9 +172,30 @@
 	border-radius: 3px;
 	color: #666;
 }
+.baoming .xzxq{
+	position: relative;
+}
+.baoming .xzxq ul{
+	display: none;
+	background: #FFFFFF;
+	width: 50%;
+	padding: .2rem;
+	border: 1px solid #EEEEEE;
+	position: absolute;
+	top: .6rem;
+	color: #666;
+	left:22%;
+}
+.baoming .xzxq ul li{
+	padding: .1rem;
+	font-size: .2rem;
+}
+.baoming .xzxq ul li:hover{
+	color: #7d5ff8;
+}
 .baoming {
 	position: relative;
-	height: 5rem;
+	height: 6rem;
 }
 .baoming button{
 	background: #7d5ff8;

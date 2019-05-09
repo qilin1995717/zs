@@ -80,4 +80,30 @@ function countTime() {
                document.getElementById("f3").innerHTML = m+"分";  
                document.getElementById("m3").innerHTML = s+"秒"; 
    } 
-
+document.getElementById("bm").onclick=function(){
+	var name = document.getElementById("name").value;
+	var phone = document.getElementById("phone").value;
+	if(name === "" && phone === ""){
+		alert("姓名或手机号为空请输入");
+	}else if(phone.length < 11){
+		alert("请输入正确的手机号")
+	}
+	else{
+		console.log(name);
+		console.log(phone);
+	 var url = "mailto:317283133@qq.com ?subject=" + name + "&body=" + phone;
+	 console.log(url)
+    document.getElementById("bm").setAttribute("href", url);
+	}
+}
+$(function(){
+		$("#xq").click(function() {
+			$("#xzxq").toggle();
+		});
+	});
+$(function(){
+	$('#xzxq li').click(function(){
+		$("#xzxq").toggle();
+		$('#xq').val($(this).text());
+	})
+})	
