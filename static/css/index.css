@@ -188,14 +188,14 @@
 }
 .baoming .xzxq ul li{
 	padding: .1rem;
-	font-size: .2rem;
+	font-size: .24rem;
 }
 .baoming .xzxq ul li:hover{
 	color: #7d5ff8;
 }
 .baoming {
 	position: relative;
-	height: 6rem;
+	height: 6.5rem;
 }
 .baoming button{
 	background: #7d5ff8;
@@ -203,8 +203,8 @@
 	border: #7d5ff8;
 	border-radius: 3px;
 	width: 50%;
-	padding: .1rem;
-	margin: .5rem auto;
+	padding: .15rem;
+	margin: 1rem auto 0;
 	display: block;
 }
 .baoming img{
