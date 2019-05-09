@@ -107,3 +107,63 @@ $(function(){
 		$('#xq').val($(this).text());
 	})
 })	
+
+$(function(){
+	 var url = location.href;
+        var timestamp="";
+        var signature = "";
+        var title = document.title;
+            var shareData = {  
+                "imgUrl" : "http://m.yousaychina.cn/zs/static/images/xiaoxiang%20.png",    // 分享显示的缩略图地址 ,根据自己情况而定
+                "link" : "http://m.yousaychina.cn/zs/",    // 分享地址  
+                "desc": "优斯暑假班火热报名中...",   // 分享描述  
+                "title": "优斯暑假班火热报名中",   // 分享标题  
+                success : function () {    
+                  
+                    // 分享成功可以做相应的数据处理  
+                  
+                    //alert("分享成功"); }   
+                }};
+            function init()
+            {
+                var parms = { url: url };
+                $.ajax({
+                    type: "POST", 
+                    url: "GEThttps://api.weixin.qq.com/cgi-bin/getcallbackip?access_token=ACCESS_TOKEN",//后台接口
+                    data: parms, //可选参数
+                    dataType: "json",
+                    success: function(data){ 
+                        timestamp=data.timestamp;
+                        signature=data.signature;
+                        //alert(timestamp)
+                        initwx(timestamp, signature);
+                    } //可选参数
+                });
+                
+                
+                
+            }
+            $(function () {
+                init();
+            });
+            function initwx(timestamp, signature) {
+                wx.config({
+                    debug: false, // 
+                    appId: 'wxb82a9e94d41a92c7', // 公众号的唯一标识 
+                    timestamp: timestamp, //生成签名的时间戳 
+                    nonceStr: 'GDOU', //生成签名的随机串
+                    signature: signature,// 
+                    jsApiList: ['onMenuShareTimeline', // 
+                               'onMenuShareAppMessage'] // 
+                });
+                wx.checkJsApi({
+                    jsApiList: [
+                        'onMenuShareTimeline','onMenuShareAppMessage'
+                    ]
+                });
+                wx.ready(function () {
+                    wx.onMenuShareTimeline(shareData);//分享到朋友圈
+					wx.onMenuShareAppMessage(shareData);//分享给朋友
+                });
+            }
+})
